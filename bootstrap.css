@@ -1,0 +1,43 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    background: linear-gradient(120deg, #102a56, #2476c9);
+    padding: 110px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+#about p {
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+@media(max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}

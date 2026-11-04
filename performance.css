@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f5fc;
+    color: #183153;
+}
+
+header {
+    background: #102a56;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero {
+    background: linear-gradient(120deg, #102a56, #2476c9);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.content,
+.image-section {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #102a56;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #00000015;
+}
+
+.card h3 {
+    color: #2476c9;
+    margin-bottom: 15px;
+}
+
+.image-section img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+    border-radius: 12px;
+}
+
+button {
+    background: #2476c9;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #102a56;
+}
+
+footer {
+    background: #102a56;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 600px) {
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .content,
+    .image-section {
+        padding: 30px 5%;
+    }
+}

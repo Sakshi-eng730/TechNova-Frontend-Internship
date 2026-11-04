@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Component Library</title>
+    <link rel="stylesheet" href="components.css">
+</head>
+<body>
+
+    <header>
+        <h1>TechNova UI Library</h1>
+        <p>Reusable Website Components</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Button Components</h2>
+            <button class="btn primary">Primary Button</button>
+            <button class="btn secondary">Secondary Button</button>
+            <button class="btn success">Success Button</button>
+        </section>
+
+        <section>
+            <h2>Card Components</h2>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>We create modern and responsive websites.</p>
+                    <button class="btn primary">Learn More</button>
+                </div>
+
+                <div class="card">
+                    <h3>App Development</h3>
+                    <p>We develop useful mobile applications.</p>
+                    <button class="btn success">Explore</button>
+                </div>
+
+                <div class="card">
+                    <h3>Digital Marketing</h3>
+                    <p>We help businesses grow online.</p>
+                    <button class="btn secondary">Read More</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Input Components</h2>
+
+            <input type="text" id="userName"
+            placeholder="Enter your name">
+
+            <button class="btn primary" onclick="showName()">
+                Submit
+            </button>
+
+            <p id="result"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 TechNova. All Rights Reserved.</p>
+    </footer>
+
+    <script src="components.js"></script>
+
+</body>
+</html>

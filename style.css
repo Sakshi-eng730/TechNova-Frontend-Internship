@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    background: #102a56;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffbd39;
+}
+
+/* Home Section */
+
+.hero {
+    min-height: 450px;
+    background: linear-gradient(
+        120deg, #102a56, #2476c9
+    );
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.btn {
+    background: #ffbd39;
+    color: #102a56;
+    padding: 14px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 25px;
+    font-weight: bold;
+}
+/* Common Sections */
+
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #102a56;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+/* Services Cards */
+
+.services {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000012;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #2476c9;
+    margin-bottom: 15px;
+}
+
+/* Features */
+
+#features {
+    background: #e8f1ff;
+}
+
+/* Contact */
+
+#contact {
+    background: #102a56;
+    color: white;
+}
+
+#contact h2 {
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    background: #081a36;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+}
+/* Professional Services Design */
+
+#services {
+    background: #f4f7fc;
+}
+
+#services h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border-bottom: 4px solid #2476c9;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    border-bottom-color: #ffbd39;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #102a56;
+}
+
+.card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Section Animation */
+
+section h2 {
+    transition: 0.3s;
+}
+
+section h2:hover {
+    color: #2476c9;
+}
+/* About Section */
+
+#about {
+    background: white;
+    padding: 80px 10%;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #102a56;
+}
+
+#about p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.9;
+}
+
+/* Button Hover */
+
+.btn {
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+    color: #102a56;
+    transform: scale(1.05);
+}
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+}

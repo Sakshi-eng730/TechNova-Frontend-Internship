@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f5fc;
+    color: #183153;
+}
+
+header {
+    background: #102a56;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 40px 8%;
+    text-align: center;
+    min-height: 75vh;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #102a56;
+}
+
+button {
+    background: #2476c9;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #102a56;
+}
+
+#message {
+    margin: 20px;
+}
+
+.user-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.user-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #00000015;
+    text-align: left;
+}
+
+.user-card h3 {
+    color: #2476c9;
+    margin-bottom: 12px;
+}
+
+.user-card p {
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    background: #102a56;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 600px) {
+    main {
+        padding: 30px 5%;
+    }
+}

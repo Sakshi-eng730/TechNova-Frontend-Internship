@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova SPA</title>
+    <link rel="stylesheet" href="spa.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TechNova</h1>
+
+        <nav>
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('about')">About</button>
+            <button onclick="showPage('services')">Services</button>
+            <button onclick="showPage('contact')">Contact</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="page active">
+            <h2>Welcome to TechNova</h2>
+            <p>We provide innovative digital solutions.</p>
+            <button onclick="showPage('services')">
+                Explore Services
+            </button>
+        </section>
+
+        <section id="about" class="page">
+            <h2>About Us</h2>
+            <p>
+                TechNova is a digital solutions company.
+                We create modern and responsive websites.
+            </p>
+        </section>
+
+        <section id="services" class="page">
+            <h2>Our Services</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>We build modern websites.</p>
+                </div>
+
+                <div class="card">
+                    <h3>App Development</h3>
+                    <p>We create mobile applications.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Digital Marketing</h3>
+                    <p>We promote businesses online.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <h2>Contact Us</h2>
+            <p>Email: technova@gmail.com</p>
+            <p>Phone: +91 9876543210</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 TechNova. All Rights Reserved.</p>
+    </footer>
+
+    <script src="spa.js"></script>
+
+</body>
+</html>

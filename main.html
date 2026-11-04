@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Internship Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef3fb;
+            color: #183153;
+        }
+
+        header {
+            background: #142746;
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        header p {
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .level {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000015;
+        }
+
+        .level h2 {
+            margin-bottom: 18px;
+            color: #203c61;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .project {
+            background: #f2f6ff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            display: inline-block;
+            background: #203c61;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        .project a:hover {
+            background: #5878b9;
+        }
+
+        footer {
+            background: #142746;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>TechNova</h1>
+    <p>Front-End Development Internship</p>
+    <p>My Complete Project Dashboard</p>
+</header>
+
+<main class="container">
+
+    <section class="level">
+        <h2>Level 1 - Basic Front-End Development</h2>
+
+        <div class="projects">
+            <div class="project">
+                <h3>Task 1</h3>
+                <p>Responsive Landing Page</p>
+                <a href="index.html">Open Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Task 2</h3>
+                <p>Interactive Registration Form</p>
+                <a href="register.html">Open Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Task 3</h3>
+                <p>Basic DOM Manipulation</p>
+                <a href="counter.html">Open Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="level">
+        <h2>Level 2 - Intermediate Development</h2>
+
+        <div class="projects">
+            <div class="project">
+                <h3>Task 1</h3>
+                <p>Single Page Application</p>
+                <a href="spa.html">Open Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Task 2</h3>
+                <p>REST API Integration</p>
+                <a href="api.html">Open Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Task 3</h3>
+                <p>CSS Frameworks - Bootstrap</p>
+                <a href="bootstrap.html">Open Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="level">
+        <h2>Level 3 - Advanced Development</h2>
+
+        <div class="projects">
+            <div class="project">
+                <h3>Task 1</h3>
+                <p>Custom Component Library</p>
+                <a href="components.html">Open Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Task 2</h3>
+                <p>Performance Optimization</p>
+                <a href="performance.html">Open Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Task 3</h3>
+                <p>Advanced Animations</p>
+                <a href="animation.html">Open Project</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 TechNova | Front-End Development Internship</p>
+</footer>
+
+</body>
+</html>
